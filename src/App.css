@@ -1,0 +1,119 @@
+.note-list{
+  display: grid;
+  grid-gap:1rem;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+}
+
+.container{
+  max-width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  min-height: 100vh;
+}
+
+.note.new{
+  background-color: #67d7cc;
+}
+textarea{
+  border: none;
+  resize: none;
+  background-color: #67d7cc;
+  overflow: hidden;
+}
+textarea::placeholder{
+  color: black;
+}
+textarea:focus{
+  outline: none;
+}
+
+.save{
+  background-color: #e1e1e1;
+  border: none;
+  border-radius: 15px;
+  padding: 5px 10px 5px 10px;
+}
+
+.save:hover{
+  background-color: #ededed;
+  cursor: pointer;
+}
+
+.note{
+  background-color: #fef68a;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  padding: 1rem;
+  min-height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  white-space: pre-wrap;
+
+}
+
+.note-footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.note-delete:hover{
+  color:#67d7cc;
+  cursor: pointer;
+}
+
+
+.search{
+  display: flex;
+  align-items: center;
+  background-color: rgb(233,233,233);
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 1.5em;
+  gap: 10px;
+}
+
+.search input{
+  border: none;
+  background-color: rgb(233,233,233);
+}
+.search input:focus{
+  outline: none;
+}
+.searchIcon{
+  color: rgb(0, 0, 0);
+}
+.searchIcon:hover{
+  color: #67d7cc;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding-top: 10px;
+}
+.darkMode{
+  background-color: black;
+}
+.darkMode h1{
+  color: white;
+}
+.darkMode .note{
+  background-color: rgb(253, 113, 103);
+  color: #ffffff;
+}
+.darkMode .note.new{
+  background-color: #da880d;
+}
+.darkMode textarea{
+  background-color: #da880d;
+  color: #ffffff;
+}
+.darkMode textarea::placeholder{
+  color: rgb(255, 255, 255);
+}
